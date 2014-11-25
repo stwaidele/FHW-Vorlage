@@ -1,0 +1,25 @@
+%% Definition for Codeschnipsel im Fließtext
+\newcommand{\code}{\texttt}
+% \newcommand{\buzz}{\textit}
+\newcommand{\buzz}{\textit}
+
+\newcommand{\todo}[1]{\fbox{\parbox{\textwidth}{\textbf{To do:} #1}}}
+%\newcommand{\myref}[1]{„\ref{#1}~\nameref{#1}“}
+\newcommand{\myref}[1]{\textit{\ref{#1}~\nameref{#1}}}
+
+%% Für Codeblöcke mit Syntax-Highlighting
+%% http://www.ctan.org/tex-archive/macros/latex/contrib/minted/
+\usepackage{minted}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+
+\backgroundsetup{%
+  pages=some,
+  firstpage=true,
+  scale=1,       %% change accordingly
+  angle=0,       %% change accordingly
+  opacity=1,    %% change accordingly
+  color =black,  %% change accordingly
+  contents={\begin{tikzpicture}[remember picture,overlay]
+        \node at (current page.center) {\includegraphics[width=21cm]{briefpapier}};    
+    \end{tikzpicture}}
+}

@@ -1,0 +1,64 @@
+%description: Deckblatt in Deutsch
+%% Basierend auf einer TeXnicCenter-Vorlage von Tino Weinkauf.
+%% sowie der akad-vorlage von Daniel Falkner
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Deckblatt
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% ACHTUNG: Sie benötigen ein Hauptdokument, um diese Datei
+%%          benutzen zu können. Verwenden Sie im Hauptdokument
+%%          den Befehl "\input{dateiname}", um diese
+%%          Datei einzubinden.
+%%
+
+\begin{titlepage}
+%\thispagestyle{empty}
+
+% \hspace*{-40mm}\includegraphics[width=21cm]{briefpapier.png}
+
+\begin{spacing}{1.5}
+\vspace*{2cm}
+\begin{center}
+\vfill
+\vfill
+\vfill
+\vfill
+\LARGE
+\textbf{\TitelMarkedup}
+\vfill
+\vfill
+\vfill
+\vfill
+\Large
+\textbf{\Name} \\
+\vfill
+\vfill
+\vfill
+\normalsize
+\Betreff
+\vfill
+bei
+\vfill
+\Betreuer
+\end{center}
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill
+\vfill	
+\Strasse \\
+\PlzOrt \hfill \Semester\\ 
+\href{mailto:\Email}{\Email} \hfill \today
+%%Datum der Abgabe - am besten selbst reinschreiben.
+%\hfill \raisebox{3cm}{\colorbox{bg}{\hspace{5.78cm}\vspace*{10cm}}}
+\vspace*{1.5cm}
+\end{spacing}
+\end{titlepage}
+\backgroundsetup{contents={}}
+
+\normalsize
